@@ -1,0 +1,8 @@
+// LINE UNDER THE H2
+@mixin heading-border-bottom {
+    content: '';
+    border-bottom: 3px solid $blue;
+    width: 95px;
+    display: block;
+    margin-top: 24px;
+}

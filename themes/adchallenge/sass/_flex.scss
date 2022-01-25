@@ -1,0 +1,7 @@
+// FLEX DISPLAY
+@mixin flex($display, $direction, $jsty-cnt, $align-items) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $jsty-cnt;
+    align-items: $align-items;
+}

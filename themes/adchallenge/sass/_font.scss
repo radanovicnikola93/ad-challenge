@@ -1,0 +1,15 @@
+// FONT
+$primary-font: 'Roboto', sans-serif;
+
+// FONT STYLE
+@mixin font-style($size, $color, $weight, $transform) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    text-transform: $transform;
+}
+
+// FONT WEIGHT
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}

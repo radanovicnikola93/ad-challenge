@@ -1,0 +1,623 @@
+/* line 2, ../sass/_reset.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, ../sass/style.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 25, ../sass/style.scss */
+body {
+  color: #FFFFFF;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 32, ../sass/style.scss */
+header {
+  position: fixed;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 99px;
+  width: 100%;
+}
+
+/* line 7, ../sass/blocks/_header.scss */
+header .region-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+/* line 11, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* line 15, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-branding .site-logo img {
+  height: 56px;
+  width: 56px;
+}
+
+/* line 20, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-branding .site-slogan {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 900;
+  text-transform: none;
+  margin: 15px;
+}
+
+/* line 27, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-main-menu .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 29, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-main-menu .menu li {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* line 32, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-main-menu .menu li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* line 35, ../sass/blocks/_header.scss */
+header .region-header #block-adchallenge-main-menu .menu li a:hover {
+  padding-bottom: 3px;
+  border-bottom: 5px solid #0097A7;
+  border-radius: 1px;
+}
+
+/* line 37, ../sass/style.scss */
+#block-top-content-header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  height: 724px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 9, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 12, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home h2 {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: none;
+}
+
+/* line 14, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home h2::after {
+  content: '';
+  border-bottom: 3px solid #FFFFFF;
+  opacity: 0.4;
+  width: 249px;
+  display: block;
+  margin-top: 24px;
+}
+
+/* line 24, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home h1 {
+  font-size: 64px;
+  color: #FFFFFF;
+  font-weight: 100;
+  text-transform: none;
+}
+
+/* line 32, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home .field--name-field-link {
+  width: 180px;
+  height: 50px;
+  background: #FF5252;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #FF5252;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 36, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home .field--name-field-link a {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 40, ../sass/blocks/_block-top-content-header.scss */
+#block-top-content-header #challenge-home .field--name-field-link a:hover {
+  cursor: pointer;
+}
+
+/* line 42, ../sass/style.scss */
+#block-adchallenge-content {
+  background-color: #101010;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 5, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content>h2 {
+  margin-left: -780px;
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 85px;
+}
+
+/* line 10, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content>h2::after {
+  content: '';
+  border-bottom: 3px solid #0097A7;
+  width: 95px;
+  display: block;
+  margin-top: 24px;
+}
+
+/* line 16, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 18, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row {
+  margin: 20px;
+  width: 310px;
+  height: 516px;
+}
+
+/* line 23, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row h2 {
+  margin-bottom: 10px;
+}
+
+/* line 25, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row h2 a {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* line 32, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row .node__content .createdDate {
+  font-size: 12px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 24px;
+}
+
+/* line 37, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row .node__content img {
+  width: 310px;
+  height: 204px;
+  margin-bottom: 19px;
+}
+
+/* line 43, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row .node__content p {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 46px;
+}
+
+/* line 49, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row .node__content .node__links a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-left: -5px;
+}
+
+/* line 54, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row .node__content .node__links a::after {
+  content: ">";
+  color: #0097A7;
+  height: 12px;
+  width: 7px;
+  margin-left: 5px;
+}
+
+/* line 62, ../sass/blocks/_block-adchallenge-content.scss */
+#block-adchallenge-content .views-element-container .view-content .views-row .node__content .node__links a:hover::after {
+  content: ">";
+  color: #FF5252;
+  height: 12px;
+  width: 7px;
+  margin-left: 5px;
+}
+
+/* line 47, ../sass/style.scss */
+#block-latest-event {
+  background-color: #161E21;
+  height: 540px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 5, ../sass/blocks/_block-latest-event.scss */
+#block-latest-event .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+/* line 10, ../sass/blocks/_block-latest-event.scss */
+#block-latest-event .container .img-left {
+  width: 500px;
+}
+
+/* line 14, ../sass/blocks/_block-latest-event.scss */
+#block-latest-event .container .content-right {
+  width: 570px;
+}
+
+/* line 17, ../sass/blocks/_block-latest-event.scss */
+#block-latest-event .container .content-right h2 {
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+/* line 20, ../sass/blocks/_block-latest-event.scss */
+#block-latest-event .container .content-right h2::after {
+  content: '';
+  border-bottom: 3px solid #0097A7;
+  width: 95px;
+  display: block;
+  margin-top: 24px;
+}
+
+/* line 30, ../sass/blocks/_block-latest-event.scss */
+#block-latest-event .container .content-right p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* line 52, ../sass/style.scss */
+#block-about-me {
+  background-color: #101010;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 5, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+/* line 10, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .content-left {
+  z-index: 2;
+  margin-right: 30px;
+  width: 420px;
+  height: 480px;
+}
+
+/* line 15, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .content-left h2 {
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+/* line 18, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .content-left h2::after {
+  content: '';
+  border-bottom: 3px solid #0097A7;
+  width: 95px;
+  display: block;
+  margin-top: 24px;
+}
+
+/* line 22, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .content-left p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* line 29, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .img-right {
+  width: 525px;
+  height: 480px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 35, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .img-right .field img {
+  width: 525px;
+  height: 480px;
+}
+
+/* line 40, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .img-right::before {
+  content: "";
+  background: #161E21;
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  left: -150px;
+  position: absolute;
+  z-index: -100;
+}
+
+/* line 50, ../sass/blocks/_block-about-me.scss */
+#block-about-me .container .img-right::after {
+  content: "";
+  background: #1D1524;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  right: -50px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+
+/* line 57, ../sass/style.scss */
+footer {
+  background-color: #0f2124;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(0deg, #0f2124 0%, #1e2c2e 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 6, ../sass/blocks/_footer.scss */
+footer .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 9, ../sass/blocks/_footer.scss */
+footer .menu li {
+  padding: 0 15px;
+}
+
+/* line 11, ../sass/blocks/_footer.scss */
+footer .menu li a {
+  font-size: 14px;
+  color: #949494;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+}
+
+/* line 18, ../sass/blocks/_footer.scss */
+footer #block-footercreated {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+/* line 21, ../sass/blocks/_footer.scss */
+footer #block-footercreated a {
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 992px) {
+
+  /* line 3, ../sass/blocks/responsive/_tablet-responsive.scss */
+  #block-adchallenge-content {
+    height: 2000px;
+  }
+
+  /* line 5, ../sass/blocks/responsive/_tablet-responsive.scss */
+  #block-adchallenge-content>h2 {
+    margin-left: 0px;
+  }
+
+  /* line 9, ../sass/blocks/responsive/_tablet-responsive.scss */
+  #block-adchallenge-content .views-element-container .view-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* line 3, ../sass/blocks/responsive/_mobile-responsive.scss */
+  html {
+    overflow-x: hidden;
+  }
+
+  /* line 8, ../sass/blocks/responsive/_mobile-responsive.scss */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 130px;
+    width: 100%;
+  }
+
+  /* line 11, ../sass/blocks/responsive/_mobile-responsive.scss */
+  header .region-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 17, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-latest-event {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 20, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-latest-event .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 22, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-latest-event .container .img-left {
+    width: 80%;
+  }
+
+  /* line 24, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-latest-event .container .img-left img {
+    width: 100%;
+  }
+
+  /* line 28, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-latest-event .container .content-right {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* line 36, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 39, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 41, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me .container .content-left {
+    margin-top: 100px;
+    margin-right: 0;
+    width: 80%;
+  }
+
+  /* line 46, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me .container .img-right {
+    margin-right: 0;
+    width: 80%;
+  }
+
+  /* line 50, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me .container .img-right .field img {
+    width: 100%;
+    height: 320px;
+  }
+
+  /* line 56, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me .container .img-right::before {
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: -75px;
+  }
+
+  /* line 63, ../sass/blocks/responsive/_mobile-responsive.scss */
+  #block-about-me .container .img-right::after {
+    width: 90px;
+    height: 90px;
+    right: -40px;
+    bottom: 120px;
+  }
+
+  /* line 74, ../sass/blocks/responsive/_mobile-responsive.scss */
+  footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 77, ../sass/blocks/responsive/_mobile-responsive.scss */
+  footer .menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

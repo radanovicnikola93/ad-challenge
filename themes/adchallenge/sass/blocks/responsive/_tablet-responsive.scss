@@ -1,0 +1,14 @@
+// tablet
+@mixin tablet-responsive {
+    #block-adchallenge-content {
+        height: 2000px;
+        >h2 {
+            margin-left: 0px;
+        }
+        .views-element-container {
+            .view-content {
+                @include flex(flex, column, center, center);
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@mixin latest-event {
+    @include container-props($dark-blue, 540px);
+    @include flex(flex, row, center, center);
+    // MAIN CONTAINER
+    .container {
+        @include flex(flex, row, center, center);
+        height: 100%;
+        width: 80%;
+        // IMAGE LEFT
+        .img-left {
+            width: 500px;
+        }
+        // CONTENT RIGHT
+        .content-right {
+            width: 570px;
+            // HEADER
+            h2 {
+                @include font-style(36px, $white, 300, uppercase);
+                margin-bottom: 65px;
+                &::after {
+                    // content: '';
+                    // border-bottom: 3px solid $blue;
+                    // width: 95px;
+                    // display: block;
+                    // margin-top: 24px;
+                    @include heading-border-bottom;
+                }
+            }
+            // TEXT
+            p {
+                @include font-weight(normal);
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+// mobile
+@mixin mobile-responsive {
+    html {
+    overflow-x: hidden;
+    }
+
+    // HEADER
+    header {
+        @include flex(flex, column, center, center);
+        @include container-props(rgba(0, 0, 0, 0.5), 130px, 100%);
+        .region-header {
+            @include flex(flex, column, center, center);
+        }
+    }
+
+    // LATEST EVENT
+    #block-latest-event {
+        height: 800px;
+        @include flex(flex, column, center, center);
+        .container {
+            @include flex(flex, column-reverse, center, center);
+            .img-left {
+                width: 80%;
+                img {
+                    width: 100%;
+                }
+            }
+            .content-right {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // ABOUT ME
+    #block-about-me {
+        height: 1000px;
+        @include flex(flex, column, center, center);
+        .container {
+            @include flex(flex, column, center, center);
+            .content-left {
+                margin-top: 100px;
+                margin-right: 0;
+                width: 80%;
+            }
+            .img-right {
+                margin-right: 0;
+                width: 80%;
+                .field {
+                    img {
+                    width: 100%;
+                    height: 320px;
+                    }
+                }
+                // left square
+                &::before {
+                    width: 150px;
+                    height: 150px;
+                    top: -75px;
+                    left: -75px;
+                }
+                // right square
+                &::after {
+                    width: 90px;
+                    height: 90px;
+                    right: -40px;
+                    bottom: 120px;
+                }
+            }
+        }
+    }
+
+    // FOOTER
+    footer {
+        height: 150px;
+        @include flex(flex, column, center, center);
+        .menu {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+}

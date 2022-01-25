@@ -1,0 +1,46 @@
+@mixin top-content-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 724px;
+    @include flex(flex, column, center, center);
+    // CHALLENGE HOME
+    #challenge-home {
+        @include flex(flex, column, center, center);
+        // FIRST HEADER
+        h2 {
+            @include font-style(24px, $white, 300, none);
+            &::after {
+                content: '';
+                border-bottom: 3px solid $white;
+                opacity: 0.4;
+                width: 249px;
+                display: block;
+                margin-top: 24px;
+            }
+        }
+        // MAIN HEADER
+        h1 {
+            @include font-style(64px, $white, 100, none);
+            // strong {
+            //     @include font-style(64px, $white, 500, none);
+            // }
+            
+        }
+        // BUTTON
+        .field--name-field-link {
+            @include button($red, $white, $red);
+            @include flex(flex, row, center, center);
+            // LINK
+            a {
+                @include font-style(14px, $white, 500, uppercase);
+                text-decoration: none;
+                text-align: center;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

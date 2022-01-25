@@ -1,0 +1,25 @@
+@mixin footer {
+    @include container-props(rgb(15, 33, 36), 120px);
+    background: linear-gradient(0deg, rgba(15, 33, 36, 1) 0%, rgba(30, 44, 46, 1) 100%);
+    @include flex(flex, row, center, center);
+    // MENU
+    .menu {
+        display: flex;
+        flex-direction: row;
+        li {
+            padding: 0 15px;
+            a {
+                @include font-style(14px, $medium-gray, 400, none);
+                text-decoration: none;
+            }
+        }
+    }
+    // FOOTER CARD
+    #block-footercreated {
+        @include flex(flex, row, center, center);
+        margin-top: 45px;
+        a {
+            color: $white;
+        }
+    }
+}

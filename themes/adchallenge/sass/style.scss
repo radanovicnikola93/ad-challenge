@@ -1,0 +1,69 @@
+// importing modules
+@import './colors';
+@import './reset';
+@import './button';
+@import './font';
+@import './flex';
+@import './container';
+@import './heading-border-bottom';
+// block
+@import 'blocks/header';
+@import 'blocks/block-top-content-header';
+@import 'blocks/block-adchallenge-content';
+@import 'blocks/block-latest-event';
+@import 'blocks/block-about-me';
+@import 'blocks/footer';
+// responsive block
+@import 'blocks/responsive/mobile-responsive';
+@import 'blocks/responsive/tablet-responsive';
+
+html {
+    scroll-behavior: smooth; // smooth behaviour
+}
+
+// BODY
+body {
+    color: $white;
+    width: 100vw; // full width
+    font-family: $primary-font; // roboto 
+}
+
+// HEADER
+header {
+    @include header;
+}
+
+// JUMBOTRON
+#block-top-content-header {
+    @include top-content-header;
+}
+
+// EVENT
+#block-adchallenge-content {
+    @include adchallenge-content;
+}
+
+// LATEST EVENT
+#block-latest-event {
+    @include latest-event;
+}
+
+// ABOUT ME
+#block-about-me {
+    @include about-me;
+}
+
+// FOOTER
+footer {
+    @include footer;
+}
+
+@media only screen and (max-width: 992px) {
+    @include tablet-responsive;
+}
+
+@media only screen and (max-width: 600px) {
+    @include mobile-responsive;
+}
+
+// @extend %mobile-responsive;

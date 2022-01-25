@@ -1,0 +1,9 @@
+// BUTTON
+@mixin button($bg, $txt-color, $border-color) {
+    width: 180px;
+    height: 50px;
+    background: $bg;
+    color: $txt-color;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+}

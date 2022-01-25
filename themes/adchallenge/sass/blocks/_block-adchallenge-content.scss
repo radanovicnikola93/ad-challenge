@@ -1,0 +1,76 @@
+@mixin adchallenge-content {
+    @include container-props($black, 1000px);
+    @include flex(flex, column, center, center);
+    // MAIN HEADER
+    > h2 {
+        // selecting only the main title
+        margin-left: -780px;
+        @include font-style(36px, $white, 300, uppercase);
+        margin-bottom: 85px;
+        &::after {
+            @include heading-border-bottom;
+        }
+    }
+    // CONTENT BOXES
+    .views-element-container {
+    .view-content {
+        @include flex(flex, row, center, center);
+        .views-row {
+            margin: 20px;
+            width: 310px;
+            height: 516px;
+            // NEWS TITLE
+            h2 {
+                margin-bottom: 10px;
+                a {
+                    @include font-style(24px, $white, 500, capitalize);
+                    text-decoration: none;
+                }
+            }
+            // CREATED DATE
+            .node__content {
+                .createdDate {
+                @include font-style(12px, $white, 400, none);
+                margin-bottom: 24px;
+            }
+            // IMAGE
+            img {
+                width: 310px;
+                height: 204px;
+                margin-bottom: 19px;
+            }
+            // TEXT
+            p {
+            @include font-style(14px, $white, 400, none);
+            margin-bottom: 46px;
+            }
+            // READ MORE
+            .node__links {
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    margin-left: -5px;
+                    // ARROW
+                    &::after {
+                        content: ">";
+                        color: $blue;
+                        height: 12px;
+                        width: 7px;
+                        margin-left: 5px;
+                    }
+                    &:hover {
+                        &::after {
+                            content: ">";
+                            color: $red;
+                            height: 12px;
+                            width: 7px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+    }
+}

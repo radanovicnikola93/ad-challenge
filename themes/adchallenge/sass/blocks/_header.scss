@@ -1,0 +1,45 @@
+@mixin header {
+    position: fixed; // sticked header at the top
+    z-index: 200;
+    @include flex(flex, row, center, center);
+    @include container-props(rgba(0, 0, 0, 0.5), 99px, 100%);
+
+    .region-header {
+        @include flex(flex, row, space-between, center);
+        width: 80%;
+        // LEFT HEADER (LOGO AND SITE SLOGAN)
+        #block-adchallenge-branding {
+            @include flex(flex, row, center, center);
+            margin: 0 10px;
+            // IMAGE
+            .site-logo img {
+                height: 56px;
+                width: 56px;
+            }
+            // SITE SLOGAN
+            .site-slogan {
+                @include font-style(16px, $white, 900, none);
+                margin: 15px;
+            }
+        }
+        // RIGHT HEADER (NAV LINKS)
+        #block-adchallenge-main-menu {
+            .menu {
+                @include flex(flex, row, center, center);
+                li {
+                    @include font-style(14px, $white, 500, uppercase);
+                    padding: 10px;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        &:hover {
+                            padding-bottom: 3px;
+                            border-bottom: 5px solid $blue;
+                            border-radius: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
